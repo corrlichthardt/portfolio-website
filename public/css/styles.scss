@@ -1,0 +1,263 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body:before,
+body:after {
+  content: "";
+  position: fixed;
+  background: white;
+  left: 0;
+  right: 0;
+  height: 45px;
+}
+body:before {
+  top: 0;
+  z-index: 10;
+}
+body:after {
+  bottom: 0;
+}
+body {
+  border-left: 45px solid white;
+  border-right: 45px solid white;
+  cursor: url(../assets/images/cursor.png), default;
+  a {
+    cursor: url(../assets/images/cursor-select.png), pointer;
+  }
+  input {
+    cursor: url(../assets/images/cursor-select.png), pointer !important;
+  }
+}
+
+#startpage {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Chathura", sans-serif;
+  background: url(../assets/images/background.jpg) no-repeat center center fixed;
+  background-position: right;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border: none;
+  &::before,
+  &:after {
+    content: none;
+  }
+}
+
+#home-body {
+  margin: 0;
+  overflow: hidden;
+}
+
+#works-body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  overflow: hidden;
+}
+
+#about-body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  overflow: hidden;
+}
+
+#contact-body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  overflow: hidden;
+}
+
+#gallery-body {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: black;
+  margin: 0;
+  min-height: 100%;
+  overflow-x: hidden;
+  position: absolute;
+}
+
+#portfolio-body {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: black;
+  margin: 0;
+  min-height: 100%;
+  overflow-x: hidden;
+  position: absolute;
+}
+
+.portfolio-wrapper {
+  height: 100%;
+}
+
+@media only screen and (max-width: 374px) {
+  body {
+    border-left: none;
+    border-right: none;
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  #works-app {
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  #about-app {
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  #contact-app {
+    overflow: hidden;
+    overflow: scroll;
+  }
+  #portfolio-app {
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+}
+
+/* Center the loader */
+#loader {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  height: 100%;
+  z-index: 2000;
+  left: 0;
+}
+#loader2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 10;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+}
+
+.span {
+  float: left;
+  width: 100px;
+  height: 100px;
+  vertical-align: middle;
+  border-radius: 1px;
+  margin-right: 100px;
+}
+.coffee-loading {
+  font-family: "Cutive Mono", monospace;
+  padding: 2rem;
+}
+/*coffee cup*/
+.coffee_cup {
+  width: 20px;
+  height: 24px;
+  border: 1px rgba(0, 0, 0, 1) solid;
+  border-radius: 0px 0px 5px 5px;
+  position: relative;
+  margin: 20px auto;
+}
+.coffee_cup:after,
+.coffee_cup:before {
+  position: absolute;
+  content: "";
+}
+.coffee_cup:after {
+  width: 5px;
+  height: 12px;
+  border: 1px #000 solid;
+  border-left: none;
+  border-radius: 0px 20px 20px 0px;
+  left: 20px;
+}
+.coffee_cup:before {
+  width: 1px;
+  height: 6px;
+  background-color: rgba(0, 0, 0, 1);
+  top: -10px;
+  left: 4px;
+  box-shadow: 5px 0px 0px 0px rgba(0, 0, 0, 1),
+    5px -5px 0px 0px rgba(0, 0, 0, 1), 10px 0px 0px 0px rgba(0, 0, 0, 1);
+  -webkit-animation: steam 1s linear infinite;
+  -moz-animation: steam 1s linear infinite;
+  animation: steam 1s linear infinite;
+}
+
+@-webkit-keyframes steam {
+  0% {
+    height: 6px;
+  }
+  100% {
+    height: 0px;
+  }
+}
+@-moz-keyframes steam {
+  0% {
+    height: 6px;
+  }
+  100% {
+    height: 0px;
+  }
+}
+@keyframes steam {
+  0% {
+    height: 6px;
+  }
+  100% {
+    height: 0px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  #gallery-app {
+    overflow: scroll;
+    overflow-x: hidden;
+    position: absolute;
+  }
+
+  #portfolio-app {
+    overflow: scroll;
+    overflow-x: hidden;
+    position: absolute;
+  }
+
+  .gallery {
+    display: inline-block;
+    position: absolute;
+    padding: 0;
+    top: 10rem;
+  }
+
+  .css-slider-wrapper {
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+
+  .slider-pagination {
+    position: fixed;
+  }
+}
