@@ -115,6 +115,13 @@ export default {
             background: bgColor,
           },
         );
+
+        TweenMax.staggerFrom(".content-wrapper", 2, {
+          delay: 0.1,
+          y: 50,
+          opacity: 0,
+          ease: Expo.easeInOut
+        });
       });
     },
   },
@@ -216,7 +223,8 @@ export default {
 
 @media only screen and (max-width: 470px) {
   .contact-container {
-      width: 200px;
+    margin-left: 1rem;
+    width: 310px;
       overflow-wrap: break-word;
       .contact-text {
         font-size: 24px;

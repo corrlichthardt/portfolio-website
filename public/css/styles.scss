@@ -115,32 +115,6 @@ body {
   height: 100%;
 }
 
-@media only screen and (max-width: 374px) {
-  body {
-    border-left: none;
-    border-right: none;
-  }
-}
-
-@media only screen and (max-width: 734px) {
-  #works-app {
-    overflow: scroll;
-    overflow-x: hidden;
-  }
-  #about-app {
-    overflow: scroll;
-    overflow-x: hidden;
-  }
-  #contact-app {
-    overflow: hidden;
-    overflow: scroll;
-  }
-  #portfolio-app {
-    overflow: scroll;
-    overflow-x: hidden;
-  }
-}
-
 /* Center the loader */
 #loader {
   position: fixed;
@@ -232,6 +206,53 @@ body {
   }
 }
 
+@media only screen and (max-width: 500px) {
+  body {
+    border-left: none;
+    border-right: none;
+    .header {
+      height: 80vh !important;
+    }
+    #inner-ripple {
+      display: none;
+    }
+    #outer-ripple {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-height: 500px) {
+  body {
+    border-left: none;
+    border-right: none;
+    #inner-ripple {
+      display: none;
+    }
+    #outer-ripple {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  #works-app {
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  #about-app {
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  #contact-app {
+    overflow: hidden;
+    overflow: scroll;
+  }
+  #portfolio-app {
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+}
 @media screen and (max-width: 1023px) {
   #gallery-app {
     overflow: scroll;

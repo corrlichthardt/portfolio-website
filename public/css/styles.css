@@ -130,32 +130,6 @@ body input {
   height: 100%;
 }
 
-@media only screen and (max-width: 374px) {
-  body {
-    border-left: none;
-    border-right: none;
-  }
-}
-
-@media only screen and (max-width: 734px) {
-  #works-app {
-    overflow: scroll;
-    overflow-x: hidden;
-  }
-  #about-app {
-    overflow: scroll;
-    overflow-x: hidden;
-  }
-  #contact-app {
-    overflow: hidden;
-    overflow: scroll;
-  }
-  #portfolio-app {
-    overflow: scroll;
-    overflow-x: hidden;
-  }
-}
-
 /* Center the loader */
 #loader {
   position: fixed;
@@ -242,6 +216,54 @@ body input {
   }
   100% {
     height: 0px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    border-left: none;
+    border-right: none;
+  }
+  body .header {
+    height: 80vh !important;
+  }
+  body #inner-ripple {
+    display: none;
+  }
+  body #outer-ripple {
+    display: none;
+  }
+}
+
+@media only screen and (max-height: 500px) {
+  body {
+    border-left: none;
+    border-right: none;
+  }
+  body #inner-ripple {
+    display: none;
+  }
+  body #outer-ripple {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  #works-app {
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  #about-app {
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  #contact-app {
+    overflow: hidden;
+    overflow: scroll;
+  }
+  #portfolio-app {
+    overflow: scroll;
+    overflow-x: hidden;
   }
 }
 

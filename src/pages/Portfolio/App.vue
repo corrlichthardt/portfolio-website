@@ -13,8 +13,8 @@
 
       <!-- Slider Pagination -->
       <div class="slider-pagination">
-        <label for="slider_1" class="page1">†</label>
-        <label for="slider_2" class="page2">⚔</label>
+        <label for="slider_1" class="page1">1</label>
+        <label for="slider_2" class="page2">2</label>
         <input
         id="cta-portfolio"
           class="gallery-button"
@@ -303,7 +303,7 @@ $gold: #cc9504;
   display: flex;
   width: 100%;
   padding: 0 3rem;
-  margin-top: 65px;
+  margin-top: 2rem;
 }
 
 .gallery li {
@@ -352,7 +352,7 @@ $gold: #cc9504;
 
 @media screen and (max-width: 570px) {
   .navigation-black {
-    padding: 5.5em 4em 1.8em 0;
+    padding: 5.5em 4em 1em 1.8em;
     position: absolute;
     z-index: 5;
   }
@@ -411,15 +411,15 @@ $gold: #cc9504;
   }
 
   .slider-pagination {
-    top: 118px;
-    left: -12px;
+    top: 10px;
+    left: 16px;
     height: 25px;
     width: 151px;
-    float: right;
-    position: relative;
-    z-index: 6;
+    position: fixed;
+    z-index: 10;
     label {
       float: right;
+      color: black;
     }
     #cta-portfolio {
       display: none;
@@ -430,5 +430,6 @@ $gold: #cc9504;
 .navigation {
   position: absolute;
   z-index: 5;
+  padding: 5.5em 4em 1em 1.8em;
 }
 </style>

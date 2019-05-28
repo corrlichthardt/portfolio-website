@@ -118,6 +118,21 @@ export default {
             background: bgColor,
           },
         );
+
+        TweenMax.staggerFrom("#works-container", 2, {
+          delay: 0.1,
+          x: -60,
+          opacity: 0,
+          ease: Expo.easeInOut
+        });
+
+        TweenMax.staggerFrom("#works-container-md", 2, {
+          delay: 0.1,
+          x: -60,
+          opacity: 0,
+          ease: Expo.easeInOut
+        });
+
       });
     },
   },

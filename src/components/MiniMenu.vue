@@ -32,7 +32,21 @@ export default {
       },
     };
   },
-  methods: {},
+  methods: {
+    staggerMenu () {
+      $(document).ready(() => {
+        TweenMax.staggerFrom(".menu ul li", 2, {
+          delay: 0.5,
+          y: 20,
+          opacity: 0,
+          ease: Expo.easeInOut
+        }, 0.1);
+      });
+    }
+  },
+  beforeMount() {
+    this.staggerMenu();
+  },
 };
 </script>
 
@@ -85,7 +99,7 @@ $gold: #cc9504;
 
 @media screen and (max-width: 570px) {
   .navigation {
-    padding: 5.5em 4em 1.8em 0;
+    padding: 5.5em 4em 1em 1.8em;
   }
 }
 </style>

@@ -8,8 +8,8 @@
       <div class="logo">
         <h2 class="name">{{ name }}</h2>
         <span class="description">
-          <span>{{ webDev }}</span> +
-          <span>{{ digiDesign }}</span>
+          <a href="portfolio.html">{{ webDev }}</a> +
+          <a href="gallery.html">{{ digiDesign }}</a>
         </span>
       </div>
     </header>
@@ -109,6 +109,14 @@ export default {
           }
           $(this).toggleClass('open');
         });
+
+        TweenMax.from(".description", 2, {
+          delay: 0.1,
+          x: -100,
+          opacity: 0,
+          ease: Expo.easeInOut
+        });
+
       });
     },
   },
@@ -155,7 +163,7 @@ $gold: #e2b544;
       padding: 0 1rem;
     }
 
-    .description span {
+    .description a {
       color: white;
       text-decoration: none;
     }

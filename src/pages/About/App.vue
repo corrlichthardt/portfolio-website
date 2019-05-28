@@ -74,6 +74,20 @@ export default {
             background: bgColor,
           },
         );
+
+        TweenMax.staggerFrom(".name-title", 2, {
+          delay: 0.1,
+          y: 20,
+          opacity: 0,
+          ease: Expo.easeInOut
+        }, 0.1);
+
+        TweenMax.from(".about-wrapper", 2, {
+          delay: 0.1,
+          x: -100,
+          opacity: 0,
+          ease: Expo.easeInOut
+        });
       });
     },
   },
