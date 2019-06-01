@@ -2,7 +2,7 @@
   <div id="app">
     <home-menu></home-menu>
     <social-media></social-media>
-    <sound-autoplay></sound-autoplay>
+    <sound-on-off></sound-on-off>
     <home-slider></home-slider>
   </div>
 </template>
@@ -10,7 +10,7 @@
 <script>
 import HomeMenu from '@/components/HomeMenu.vue';
 import SocialMedia from '@/components/SocialMedia.vue';
-import SoundAutoplay from '@/components/SoundAutoplay.vue';
+import SoundOnOff from '@/components/SoundOnOff.vue';
 import Slider from '@/components/Slider.vue';
 
 export default {
@@ -18,7 +18,7 @@ export default {
   components: {
     homeMenu: HomeMenu,
     socialMedia: SocialMedia,
-    soundAutoplay: SoundAutoplay,
+    soundOnOff: SoundOnOff,
     homeSlider: Slider,
   },
 };

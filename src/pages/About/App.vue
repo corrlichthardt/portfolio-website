@@ -120,7 +120,6 @@ export default {
   margin-top: 4rem;
   padding: 0;
   #square {
-    display: table-cell;
     vertical-align: middle;
     height: 250px;
     width: 700px;
@@ -155,7 +154,7 @@ export default {
   color: white;
   width: 900px;
   .about-wrapper {
-    padding-top: 1rem;
+    padding-top: 0.5rem;
     pre {
       margin: auto;
       width: 386px;
@@ -164,22 +163,32 @@ export default {
   }
 }
 
-@media only screen and (max-height: 920px) {
-  #about-app {
-    overflow: scroll;
-    overflow-x: hidden;
-  }
-}
 
-@media only screen and (max-width: 1290px) {
-  .name-title {
-    font-size: 5rem;
-  }
-}
-
-@media only screen and (max-width: 1110px) {
+@media only screen and (max-width: 1218px) {
   #box {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .about-text {
+    padding: 0 3rem;
+  }
+}
+
+@media (max-width: 824px) and (min-width: 571px) {
+  .name-title {
+    margin-left: 6rem;
+    font-size: 4rem;
+  }
+  .about-text {
+    padding: 0 6rem;
+  }
+}
+
+@media (max-width: 1190px) and (min-width: 825px) {
+  .about-text {
+    padding: 0 6rem;
   }
 }
 
@@ -205,6 +214,39 @@ export default {
   }
 }
 
+@media only screen and (max-width: 1190px) {
+  .about-text {
+    display: table-cell;
+  }
+}
+
+@media only screen and (min-width: 1191px) {
+  .about-text {
+      margin: 0 12rem;
+  }
+}
+
+@media only screen and (min-width: 2400px) {
+  .about-container {
+    margin-left: 5rem;
+  }
+}
+
+@media only screen and (max-height: 850px) {
+  .name-title {
+    margin-top: 1rem;
+  }
+  #square {
+    display: none;
+  }
+}
+
+@media only screen and (min-height: 851px) {
+  #square {
+    display: table-cell;
+  }
+}
+
 @media only screen and (min-height: 1200px) {
   .about-container {
     display: table;
@@ -219,25 +261,6 @@ export default {
 @media only screen and (max-height: 1366px) {
   .about-container {
     display: block;
-  }
-}
-
-@media only screen and (max-width: 1190px) {
-  .about-text {
-    display: table-cell;
-    padding: 0px 3rem;
-  }
-}
-
-@media only screen and (min-width: 1191px) {
-  .about-text {
-      margin: 0 12rem;
-  }
-}
-
-@media only screen and (min-width: 2400px) {
-  .about-container {
-    margin-left: 5rem;
   }
 }
 </style>

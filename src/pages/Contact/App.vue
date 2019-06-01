@@ -223,8 +223,8 @@ export default {
 
 @media only screen and (max-width: 470px) {
   .contact-container {
-    margin-left: 1rem;
-    width: 310px;
+    margin-left: -0.6rem;
+    width: 255px;
       overflow-wrap: break-word;
       .contact-text {
         font-size: 24px;
@@ -234,7 +234,7 @@ export default {
 
 @media only screen and (min-width: 471px) {
   .contact-container {
-    margin-left: auto;
+    margin-left: -0.6rem;
     margin-right: auto;
     width: 530px;
     .contact-text {
@@ -248,7 +248,7 @@ export default {
     width: 530px;
     margin-left: 2rem;
     .contact-text {
-      font-size: 30px;
+      font-size: 26px;
     }
   }
 }
@@ -270,7 +270,7 @@ export default {
 
 @media only screen and (max-width: 900px) {
   #box-contact {
-    margin: 0 1.8rem;
+    margin: 0 3.8rem;
     #square {
       width: 300px;
       #left-side,

@@ -142,7 +142,6 @@ $gold: #e2b544;
       margin-left: auto;
       margin-right: auto;
       position: absolute;
-      top: 66%;
       text-align: center;
       z-index: 1;
       color: white;
@@ -354,13 +353,29 @@ $gold: #e2b544;
       opacity: 0;
     }
   }
-  
+
   @media only screen and (max-height: 500px) {
+    .logo {
+      top: 56%;
+    }
+    #nav-toggle {
+      top: 45%;
+      width: 8rem;
+      height: 8rem;
+    }
     .nav-toggle.open {
       top: 35%;
+      width: 5rem !important;
+      height: 5rem !important;
     }
     .nav {
       top: 34%;
+    }
+  }
+
+    @media only screen and (min-height: 501px) {
+    .logo {
+      top: 66%;
     }
   }
 

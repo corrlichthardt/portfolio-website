@@ -243,7 +243,6 @@ $gold: #cc9504;
 
 #works-container-md {
   display: none;
-  max-width: 500px;
   margin: auto;
   .design-quote-md {
     font-family: "Russo One", sans-serif;
@@ -290,29 +289,31 @@ $gold: #cc9504;
   }
 }
 
-@media only screen and (max-width: 730px) {
-  #works-container-md {
-    max-width: 300px;
-  }
-}
-
-@media only screen and (max-height: 850px) {
-  #works-app {
-    overflow: scroll;
-    overflow-x: hidden;
-    #square {
-      padding: 0 0 4rem 0;
-    }
-  }
-}
-
-@media only screen and (max-width: 825px) {
+@media only screen and (max-width: 570px) {
   #box {
     display: none;
   }
   #works-container-md {
     display: block;
-    padding: 0 1rem;
+    padding: 0 4em 0 3em;
+    .gallery-button-md, .gallery-button-md.second {
+      display: flex;
+      margin: 0 auto 1rem 0;
+    }
+  }
+}
+
+@media (max-width: 824px) and (min-width: 571px) {
+  #box {
+    display: none;
+  }
+  #works-container-md {
+    display: block;
+    padding: 0 4em 0 5.5em;
+    .gallery-button-md, .gallery-button-md.second {
+      display: flex;
+      margin: 0 auto 1rem 0;
+    }
   }
 }
 

@@ -25,13 +25,6 @@ body:after {
 body {
   border-left: 45px solid white;
   border-right: 45px solid white;
-  cursor: url(../assets/images/cursor.png), default;
-  a {
-    cursor: url(../assets/images/cursor-select.png), pointer;
-  }
-  input {
-    cursor: url(../assets/images/cursor-select.png), pointer !important;
-  }
 }
 
 #startpage {
