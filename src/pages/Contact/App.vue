@@ -253,7 +253,7 @@ export default {
   }
 }
 
-@media only screen and (max-height: 600px) {
+@media only screen and (max-height: 400px) {
   #contact-app {
     overflow: scroll;
     overflow-x: hidden;

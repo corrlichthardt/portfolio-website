@@ -359,7 +359,7 @@ $gold: #e2b544;
       top: 56%;
     }
     #nav-toggle {
-      top: 45%;
+      top: 43%;
       width: 8rem;
       height: 8rem;
     }

@@ -340,4 +340,28 @@ $gold: #cc9504;
     margin-left: 16rem;
   }
 }
+
+@media only screen and (max-height: 835px) {
+  #works-app {
+    overflow: scroll;
+    overflow-x: hidden;
+    padding-bottom: 4rem;
+  }
+}
+
+@media only screen and (max-height: 850px) {
+  #works-app {
+    overflow: scroll;
+    overflow-x: hidden;
+    #square {
+      padding: 0 0 4rem 0;
+      .design-quote {
+        margin-top: 1rem;
+      }
+      .intro-text {
+        margin: 0 0 1rem 0;
+      }
+    }
+  }
+}
 </style>

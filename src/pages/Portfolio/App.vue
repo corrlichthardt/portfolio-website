@@ -395,7 +395,7 @@ $gold: #cc9504;
 
 @media screen and (max-width: 1023px) {
   .navigation {
-    padding: 5.5em 0 0 0;
+    padding: 5.5em 4em 1em 1.8em;
   }
 
   .gallery {
@@ -430,6 +430,6 @@ $gold: #cc9504;
 .navigation {
   position: absolute;
   z-index: 5;
-  padding: 5.5em 4em 1em 1.8em;
 }
+
 </style>

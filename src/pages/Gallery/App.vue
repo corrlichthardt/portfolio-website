@@ -252,6 +252,9 @@ $gold: #cc9504;
   background-repeat: no-repeat;
   background-position: center center;
   margin: 5px;
+  &:last-child {
+    padding-bottom: 1rem;
+  }
 }
 
 #gallery-app {
