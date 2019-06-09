@@ -11,7 +11,7 @@
           <p>
             Hi, I’m a 26 year old web developer / designer, born and raised in New Zealand.
             After completing my Business Degree at the Auckland University of Technology (AUT),
-            I moved to Germany and started an apprenticeship in IT. I love IT, in particular web-development and after coding my
+            I moved to Germany and started an apprenticeship in IT. I love IT, in particular web development and after coding my
             first website to promote my photography, I just didn't want to stop.
           </p>
           <p>

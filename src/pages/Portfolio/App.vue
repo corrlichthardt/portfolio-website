@@ -14,7 +14,7 @@
       <!-- Slider Pagination -->
       <div class="slider-pagination">
         <label for="slider_1" class="page1">1</label>
-        <label for="slider_2" class="page2">2</label>
+        <!-- <label for="slider_2" class="page2">2</label> -->
         <input
         id="cta-portfolio"
           class="gallery-button"
@@ -29,8 +29,8 @@
         <ul class="gallery">
           <li>
             <figure class="snip1295">
-              <img src="../../assets/screen1.jpg" alt="sample68">
-              <a href="/avatar.html" target="_blank"></a>
+              <img src="../../assets/screen3.jpg" alt="sample68">
+              <a href="https://www.mothershipvfx.com/" target="_blank"></a>
             </figure>
           </li>
           <li>
@@ -43,16 +43,16 @@
       </div>
 
       <!-- Slider #2 -->
-      <div class="slider slide-2">
+      <!-- <div class="slider slide-2">
         <ul class="gallery">
           <li>
             <figure class="snip1295">
-              <img src="../../assets/screen3.jpg" alt="sample68">
-              <a href="https://www.mothershipvfx.com/" target="_blank"></a>
+              <img src="../../assets/screen1.jpg" alt="sample68">
+              <a href="/avatar.html" target="_blank"></a>
             </figure>
           </li>
         </ul>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -196,6 +196,9 @@ $gold: #cc9504;
   width: 100%;
   z-index: 1000;
   align-items: center;
+  label {
+    cursor: pointer;
+  }
   .gallery-button {
     font-family: "Cutive Mono", monospace;
     background-color: transparent;
@@ -208,6 +211,7 @@ $gold: #cc9504;
     transition: all 0.8s ease-in-out;
     right: 8rem;
     position: absolute;
+    cursor: pointer;
   }
 
   .gallery-button:hover {
@@ -403,11 +407,11 @@ $gold: #cc9504;
     position: absolute;
     padding: 0;
     top: 10rem;
+    padding-bottom: 2rem
   }
 
   .css-slider-wrapper {
-    overflow: scroll;
-    overflow-x: hidden;
+    overflow: auto;
   }
 
   .slider-pagination {

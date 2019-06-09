@@ -352,6 +352,9 @@ $gold: #cc9504;
   width: 100%;
   z-index: 1000;
   align-items: center;
+  label {
+    cursor: pointer;
+  }
   .gallery-button {
     font-family: "Cutive Mono", monospace;
     background-color: transparent;
@@ -364,6 +367,7 @@ $gold: #cc9504;
     transition: all 0.8s ease-in-out;
     right: 8rem;
     position: absolute;
+    cursor: pointer;
   }
 
   .gallery-button:hover {
@@ -454,8 +458,8 @@ $gold: #cc9504;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  margin-top: 2rem;
-  padding: 0 3rem;
+  margin: auto;
+  padding-top: 4rem;
 }
 
 .gallery li {
@@ -556,16 +560,19 @@ $gold: #cc9504;
 }
 
 @media screen and (max-width: 1023px) {
+  .navigation {
+    padding: 5.5em 4em 1em 1.8em;
+  }
+
   .gallery {
     display: inline-block;
     position: absolute;
     padding: 0;
-    top: 10rem;
+    top: 12rem;
   }
 
   .css-slider-wrapper {
-    overflow: scroll;
-    overflow-x: hidden;
+    overflow: auto;
   }
 
   .slider-pagination {
@@ -583,10 +590,7 @@ $gold: #cc9504;
       display: none;
     }
   }
-
-  .navigation {
-    position: absolute;
-    z-index: 5;
-  }
 }
+
+
 </style>

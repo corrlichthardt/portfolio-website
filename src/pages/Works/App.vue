@@ -17,7 +17,7 @@
           </h1>
           <p
             class="intro-text"
-          >I love creating, designing and coding. Mixing these skills together is so exciting. Being able to think creatively and develop the logic to realise ideas is what drew me to becoming a frontend developer. Photography is my main form of art. I like to layout and compose images in my mind and see my vision come to life when I take the photo. Below are the links to my photography and website portfolio:</p>
+          >I love creating, designing and coding. Mixing these skills together is so exciting. Being able to think creatively and develop the logic to realise ideas is what drew me to becoming a frontend developer. Photography is my main form of art, I like to layout and compose images in my mind and see my visions come to life. Below are the links to my photography and website portfolios:</p>
           <input
             class="gallery-button"
             type="button"
@@ -43,7 +43,7 @@
       </h1>
       <p
         class="intro-text-md"
-      >I love creating, designing and coding. Mixing these skills together is so exciting. Being able to think creatively and develop the logic to realise ideas is what drew me to becoming a frontend developer. Photography is my main form of art. I like to layout and compose images in my mind and see my vision come to life when I take the photo. Below are the links to my photography and website portfolio:</p>
+        >I love creating, designing and coding. Mixing these skills together is so exciting. Being able to think creatively and develop the logic to realise ideas is what drew me to becoming a frontend developer. Photography is my main form of art, I like to layout and compose images in my mind and see my visions come to life. Below are the links to my photography and website portfolios:</p>
       <input
         class="gallery-button-md"
         type="button"
@@ -227,6 +227,7 @@ $gold: #cc9504;
       font-size: 16px;
       transition: all 0.8s ease-in-out;
       margin-top: 0.5em;
+      cursor: pointer;
       &.second {
         margin-left: 2rem;
       }

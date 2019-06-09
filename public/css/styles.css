@@ -31,6 +31,15 @@ body {
   border-right: 45px solid white;
 }
 
+.next, .prev, .close {
+  border: none !important;
+  background-color: transparent !important;
+}
+
+.next:hover, .prev:hover, .close:hover {
+  color: #e2b544 !important;
+}
+
 #startpage {
   display: block;
   width: 100%;
@@ -59,11 +68,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0;
   overflow: hidden;
-  background-color: black;
 }
 
 #about-body {
@@ -72,11 +80,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0;
   overflow: hidden;
-  background-color: black;
 }
 
 #contact-body {
@@ -85,11 +92,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0;
   overflow: hidden;
-  background-color: black;
 }
 
 #gallery-body {
@@ -213,13 +219,13 @@ body {
   }
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 500px) {
   body {
     border-left: none;
     border-right: none;
   }
   body .header {
-    height: 83vh !important;
+    height: 80vh !important;
   }
   body #inner-ripple {
     display: none;
@@ -229,7 +235,11 @@ body {
   }
 }
 
-@media only screen and (max-height: 760px) {
+@media only screen and (max-height: 500px) {
+  body {
+    border-left: none;
+    border-right: none;
+  }
   body #inner-ripple {
     display: none;
   }

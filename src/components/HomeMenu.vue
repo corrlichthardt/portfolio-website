@@ -128,7 +128,7 @@ export default {
 
 <style lang="scss">
 $black: #000000;
-$gold: #e2b544;
+$gold: #cc9504;
 
 #home-menu {
   .header {
@@ -165,6 +165,7 @@ $gold: #e2b544;
     .description a {
       color: white;
       text-decoration: none;
+      cursor: pointer;
     }
   }
 
@@ -251,6 +252,7 @@ $gold: #e2b544;
       box-shadow: 0 4px 8px rgba(black, 0.65);
     }
     &:active {
+      -webkit-transform: translateX(-50%) translateY(-50%) scale(0.9);
       transform: translateX(-50%) translateY(-50%) scale(0.9);
       box-shadow: 0 1px 2px rgba(black, 0.35);
     }
@@ -284,31 +286,51 @@ $gold: #e2b544;
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
-    transition: all 0.25s ease-out;
     background-color: $black;
     color: $black;
     width: 12rem;
     height: 12rem;
     padding: inherit;
+    -webkit-transition: width 0.25s ease-out;
+    transition: width 0.25s ease-out;
+    -webkit-transition: height 0.25s ease-out;
+    transition: height 0.25s ease-out;
+    -webkit-transition: left 0.25s ease-out;
+    transition: left 0.25s ease-out;
+    -webkit-transition: top 0.25s ease-out;
+    transition: top 0.25s ease-out;
+
     &:hover {
       cursor: pointer;
     }
     img {
-      transition: all 0.25s ease-out;
+      -webkit-transition: width 0.25s ease-out;
+      transition: width 0.25s ease-out;
+      -webkit-transition: height 0.25s ease-out;
+      transition: height 0.25s ease-out;
+      -webkit-transition: left 0.25s ease-out;
+      transition: left 0.25s ease-out;
+      -webkit-transition: top 0.25s ease-out;
+      transition: top 0.25s ease-out;
     }
     &.open {
       background-color: white;
       top: 65%;
+      -webkit-transform: translateY(100%) translateX(-50%);
       transform: translateY(100%) translateX(-50%);
       width: 5rem;
       height: 5rem;
       &:active {
+        -webkit-transform: translateX(-50%) translateY(100%) scale(0.9);
         transform: translateX(-50%) translateY(100%) scale(0.9);
         background-color: $black;
+        -webkit-transition: scale 0.25s ease-out;
+        transition: scale 0.25s ease-out;
       }
     }
   }
@@ -319,6 +341,7 @@ $gold: #e2b544;
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
     transform: translateX(-50%) translateY(-50%) scale(1);
     border-radius: 50%;
     z-index: 4;
@@ -343,12 +366,14 @@ $gold: #e2b544;
   @keyframes pulse {
     0% {
       opacity: 0;
+      -webkit-transform: scale(1) translateX(-50%) translateY(-50%);
       transform: scale(1) translateX(-50%) translateY(-50%);
     }
     30% {
       opacity: 0.5;
     }
     100% {
+      -webkit-transform: scale(1.5) translateX(-33.3%) translateY(-33.3%);
       transform: scale(1.5) translateX(-33.3%) translateY(-33.3%);
       opacity: 0;
     }
